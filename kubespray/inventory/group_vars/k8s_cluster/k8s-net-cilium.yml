@@ -1,0 +1,2 @@
+# see roles/network_plugin/cilium/defaults/main.yml
+cilium_enable_prometheus: true
