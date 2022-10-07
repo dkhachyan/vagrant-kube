@@ -29,8 +29,9 @@ To provision the cluster, execute the following commands.
 git clone https://github.com/dkhachyan/vagrant-kube.git
 cd vagrant-kube/kubespray
 vagrant up
-
-ansible-playbook -i inventory/inventory.ini cluster.yml -b -u vagrant
+git clone https://github.com/kubernetes-sigs/kubespray.git
+cd kubespray
+ansible-playbook -i ../inventory/inventory.ini cluster.yml -b -u vagrant
 ```
 
 ## Set Kubeconfig file variable
